@@ -19,6 +19,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @EnableEurekaClient
 @Controller
 public class MmallBackserviceApplication extends SpringBootServletInitializer {
+
     @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
         return application.sources(MmallBackserviceApplication.class);
