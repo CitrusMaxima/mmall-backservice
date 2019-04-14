@@ -1,0 +1,19 @@
+server:
+  port: 8080
+
+
+spring:
+  cloud:
+    config:
+      label: v1.0
+      profile: application
+      #uri: http://localhost:8888/
+      discovery:
+        enabled: true
+        service-id: mmall-config-server
+  application:
+    name: mmall-backservice
+eureka:
+  client:
+    service-url:
+      defaultZone: http://192.168.56.3:8761/eureka/
